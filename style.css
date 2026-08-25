@@ -7,6 +7,33 @@ html {
     height: 100%;
 }
 
+a {
+    color:white;
+}
+
+li {
+    margin: 15px 0;
+}
+
+#toolbar a {
+    color:rgb(145, 145, 238)
+}
+
+#toolbar a:hover {
+    color:black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.con {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 15px;
+}
+
 .blog {
 }
 
@@ -49,4 +76,9 @@ html {
   height: 100%;
   width: 95%;
   color: white;
+}
+
+#wrap {
+    white-space: nowrap;
+    overflow: hidden;
 }

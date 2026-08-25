@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<title>i need help - kit0w0.dev</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+    #image {
+        display: none;
+    }
+</style>
+
+<body class="main">
+    <div class="content">
+        <button type="button" onclick="show()" id="btnID">
+            click this button to make him graduate from college
+        </button>
+    </div>
+<img id="image" src="img/kit/kitdawg.jpg">
+
+    <script>
+        function show() {
+            document.getElementById('image')
+                .style.display = "block";
+            document.getElementById('btnID')
+                .style.display = "none";
+        }
+    </script>
+
+    </body>
+</html>
