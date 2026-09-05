@@ -1,10 +1,21 @@
+@font-face {
+    font-family: 'EnvyCodeR Nerd Font Mono';
+    src:URL('./fonts/EnvyCodeRNerdFont-Regular.ttf') format('truetype');
+}
+
 html {
+    min-height: 100%;
     font: 19px/1 "EnvyCodeR Nerd Font Mono", monospace;  
     position: relative;
     background-image: url("./background.jpg");
     background-position: center bottom;
     background-image: no-repeat;
+    background-attachment: fixed;
     height: 100%;
+}
+
+body {
+    height:100%;
 }
 
 a {
@@ -15,12 +26,36 @@ li {
     margin: 15px 0;
 }
 
+#big {
+    font-size: 100px;
+}
+
+
 #toolbar a {
     color:rgb(145, 145, 238)
 }
 
 #toolbar a:hover {
-    color:black;
+    font-weight: bold;
+    color:rgb(160, 160, 222)
+}
+
+.album-list {
+    column-count: 2;
+    width: 60vh;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.small-italics {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.small-text {
+    font-size: 12px;
 }
 
 .container {
@@ -32,6 +67,11 @@ li {
     display: grid;
     grid-template-columns: 150px 1fr;
     gap: 15px;
+}
+
+.img-container {
+    float: left;
+    margin-right: 40px;
 }
 
 .blog {
@@ -68,6 +108,7 @@ li {
 
 .content {
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
   padding: 10px;
@@ -77,6 +118,22 @@ li {
   width: 95%;
   color: white;
 }
+
+.cloud {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+
+  height: auto;
+  min-height: 100vh;
+
+  background-color: rgba(29, 25, 47, 0.7);
+  color: white;
+  overflow: visible;
+}
+
 
 #wrap {
     white-space: nowrap;
